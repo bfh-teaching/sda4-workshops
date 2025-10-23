@@ -23,7 +23,7 @@ Standard manual trigger node
 1. Add **"HTTP Request"** node
 2. Configure:
    - **Method:** GET
-   - **URL:** `[MOCK-API-URL]/random-status`
+   - **URL:** `https://mock-api.coolify.ecys.ch/random-status`
    - This endpoint randomly returns 200 or 500!
 3. **Important:** Enable "Continue on Fail" in node settings
    - Click node → Settings (gear icon) → Check "Continue on Fail"

@@ -11,14 +11,14 @@
 You're building an agent that checks the weather in a city. If the temperature is above 20°C, it fetches current currency exchange rates (for vacation planning).
 
 ## APIs We'll Use (No Keys Needed!)
-- **Weather:** Your Mock API (`[MOCK-API-URL]/weather/zurich`)
-- **Currency:** Your Mock API (`[MOCK-API-URL]/currency/USD`)
+- **Weather:** Your Mock API (`https://mock-api.coolify.ecys.ch/weather/zurich`)
+- **Currency:** Your Mock API (`https://mock-api.coolify.ecys.ch/currency/USD`)
 
 ## Step-by-Step Instructions
 
 ### Step 1: Access n8n (5 minutes)
 1. Open your browser
-2. Navigate to: `[YOUR-N8N-URL]`
+2. Navigate to: `https://coolify.ecys.ch`
 3. Log in with your credentials (from Sunday email)
 4. Click **"Create new workflow"**
 
@@ -33,7 +33,7 @@ You're building an agent that checks the weather in a city. If the temperature i
 2. Search for **"HTTP Request"**
 3. Configure the node:
    - **Method:** GET
-   - **URL:** `[MOCK-API-URL]/weather/zurich`
+   - **URL:** `https://mock-api.coolify.ecys.ch/weather/zurich`
    - **No authentication needed!**
 4. Click **"Execute Node"** to test
 5. Verify you see weather data in the output
@@ -76,7 +76,7 @@ return {
 2. Add **"HTTP Request"** node
 3. Configure:
    - **Method:** GET
-   - **URL:** `[MOCK-API-URL]/currency/USD`
+   - **URL:** `https://mock-api.coolify.ecys.ch/currency/USD`
 4. Execute and verify currency rates appear
 
 **Expected Output:**
@@ -97,7 +97,7 @@ return {
 1. Change the city from "zurich" to another city (try "london", "paris", "berlin")
 2. Change the temperature threshold to 15°C
 3. Add a **third HTTP Request** on the **"false"** branch that fetches news:
-   - URL: `[MOCK-API-URL]/news`
+   - URL: `https://mock-api.coolify.ecys.ch/news`
 
 ## Testing Your Workflow
 1. Click **"Execute Workflow"** (top right)
