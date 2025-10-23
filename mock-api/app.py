@@ -32,6 +32,17 @@ def get_weather(city):
     temp = 10 + (len(city) % 20)
     
     cities_data = {
+        "berne": {"temp": 18, "condition": "sunny"},
+        "geneva": {"temp": 19, "condition": "sunny"},
+        "luzern": {"temp": 20, "condition": "sunny"},
+        "stuttgart": {"temp": 21, "condition": "sunny"},
+        "frankfurt": {"temp": 22, "condition": "sunny"},
+        "munich": {"temp": 23, "condition": "sunny"},
+        "hamburg": {"temp": 24, "condition": "sunny"},
+        "cologne": {"temp": 25, "condition": "sunny"},
+        "dusseldorf": {"temp": 26, "condition": "sunny"},
+        "zurich": {"temp": 22, "condition": "sunny"},
+        "basel": {"temp": 20, "condition": "sunny"},
         "zurich": {"temp": 22, "condition": "sunny"},
         "london": {"temp": 15, "condition": "rainy"},
         "paris": {"temp": 18, "condition": "cloudy"},
@@ -84,7 +95,14 @@ def get_news():
         "Students Master n8n Workflows",
         "New Study Shows Benefits of Structured Logging",
         "Microservices Architecture Gains Popularity",
-        "API Integration Simplifies Business Processes"
+        "API Integration Simplifies Business Processes",
+        "Cloud Computing Revolutionizes Industries",
+        "AI-Powered Automation Enhances Efficiency",
+        "Blockchain Technology Disrupts Traditional Systems",
+        "Quantum Computing Opens New Possibilities",
+        "Cybersecurity Threats Remain a Major Concern",
+        "Cloud Infrastructure Optimization for Cost Savings",
+        "Edge Computing Enables Real-Time Data Processing"
     ]
     
     return jsonify({
@@ -134,4 +152,4 @@ def echo():
     })
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080, debug=False
+    app.run(host='0.0.0.0', port=8080, debug=False)
